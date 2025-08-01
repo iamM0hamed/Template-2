@@ -2,6 +2,8 @@
 :root {
    --main-color: #19c8fa;
    --transparent-color: rgb(15 116 143 / 70%);
+
+   --sections-padding: 100px;
 }
 /* Variables End  */
 
@@ -51,6 +53,52 @@ ul {
 /* End Global Rules  */
 
 /* Component Start */
+
+.main-heading {
+   text-align: center;
+}
+
+.main-heading h2 {
+   font-size: 40px;
+   letter-spacing: 2px;
+   color: #1f2021;
+   font-weight: 400;
+   text-transform: uppercase;
+   position: relative;
+   padding-bottom: 70px;
+}
+.main-heading h2::before {
+   content: "";
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 30px;
+   height: 2px;
+   width: 100px;
+   background-color: #1f2021;
+}
+.main-heading h2::after {
+   content: "";
+   background-color: white;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 25px;
+   width: 12px;
+   height: 12px;
+   border: 1px solid black;
+   border-radius: 50%;
+}
+.main-heading p {
+   font-size: 15px;
+   line-height: 2;
+   color: #444;
+   font-weight: 300;
+   max-width: 550px;
+   width: 100%;
+   margin: 0 auto 100px;
+   letter-spacing: 2px;
+}
 
 /* Component End  */
 
@@ -250,6 +298,7 @@ header nav .form .i:hover {
    bottom: 30px;
    left: 50%;
    gap: 10px;
+   transform: translateX(-50%);
 }
 
 .landing .bullets li {
@@ -263,3 +312,59 @@ header nav .form .i:hover {
    border-color: var(--main-color);
 }
 /* Landing End  */
+
+/* Services Start */
+.services {
+   padding-bottom: var(--sections-padding);
+   padding-top: var(--sections-padding);
+}
+
+.services .services-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-row-gap: 60px;
+}
+
+@media (min-width: 768px) {
+   .services .services-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 50px;
+   }
+}
+
+.services .service {
+   display: flex;
+   align-items: flex-start;
+   text-align: left;
+}
+
+@media (max-width: 767px) {
+   .services .service {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+   .services .services-container .service i {
+      margin: 0 auto 20px;
+   }
+}
+
+@media (min-width: 768px) {
+   .services .services-container .service i {
+      margin-right: 50px;
+      flex-shrink: 0;
+   }
+}
+
+.services .service h3 {
+   color: var(--main-color);
+   margin-bottom: 15px;
+}
+.services .service p {
+   font-size: 15px;
+   line-height: 2;
+   color: #777;
+   font-weight: 400;
+}
+
+/* Services End */
