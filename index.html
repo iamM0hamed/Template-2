@@ -1,127 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Kasper Template</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kasper Template</title>
 
-      <!-- render all elements normally  -->
-      <link rel="stylesheet" href="css/normalize.css" />
-      <!-- Font Awesome CSS -->
-      <link rel="stylesheet" href="css/all.min.css" />
-      <!-- Main CSS File -->
-      <link rel="stylesheet" href="css/kasper.css" />
-      <!-- Google Font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet" />
-   </head>
-   <body>
-      <!-- Header Start  -->
-      <header>
-         <div class="container">
-            <div class="logo">
-               <img src="images/logo.png" alt="logo" />
-            </div>
-            <nav>
-               <div class="fas fa-bars toggle-menu"></div>
-               <ul>
-                  <li><a class="active" href="#">Home</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
-               <div class="form">
-                  <div class="i fas fa-search"></div>
-               </div>
-            </nav>
-         </div>
-      </header>
-      <!-- Header End  -->
-      <!-- Landing Start  -->
-      <div class="landing">
-         <div class="overlay">
-            <div class="text">
-               <div class="content">
-                  <h2>
-                     Hello World! <br />
-                     We Are Kasper We Make Art.
-                  </h2>
-                  <p>
-                     Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
-                     elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et,
-                     porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <i class="fa-solid fa-angle-left fa-2x angle left-angle"></i>
-         <i class="fa-solid fa-angle-right fa-2x angle right-angle"></i>
-         <ul class="bullets">
-            <li></li>
-            <li class="active"></li>
-            <li></li>
-         </ul>
-      </div>
-      <!-- Landing End  -->
-      <!-- Services Start -->
-      <div class="services">
-         <div class="container">
-            <div class="main-heading">
-               <h2>Services</h2>
-               <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
-                  elit, eget tincidunt.
-               </p>
-            </div>
-            <div class="services-container">
-               <div class="service">
-                  <i class="fas fa-desktop fa-3x"></i>
-                  <div class="text">
-                     <h3>Vorem amet intuitive</h3>
-                     <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit
-                        aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                     </p>
-                  </div>
-               </div>
-               <div class="service">
-                  <i class="fas fa-cog fa-3x"></i>
-                  <div class="text">
-                     <h3>Vorem amet intuitive</h3>
-                     <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit
-                        aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                     </p>
-                  </div>
-               </div>
-               <div class="service">
-                  <i class="fas fa-pencil-ruler fa-3x"></i>
-                  <div class="text">
-                     <h3>Vorem amet intuitive</h3>
-                     <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit
-                        aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                     </p>
-                  </div>
-               </div>
-               <div class="service">
-                  <i class="fas fa-camera fa-3x"></i>
-                  <div class="text">
-                     <h3>Vorem amet intuitive</h3>
-                     <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit
-                        aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Services End -->
-   </body>
+		<!-- render all elements normally  -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="css/all.min.css" />
+		<!-- Main CSS File -->
+		<link rel="stylesheet" href="css/kasper.css" />
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- JS Files -->
+		<script src="js/main.js" defer></script>
+	</head>
+	<body>
+		<!-- Header Start  -->
+		<header>
+			<div class="container">
+				<div class="logo">
+					<img src="images/logo.png" alt="logo" />
+				</div>
+				<nav>
+					<div class="fas fa-bars toggle-menu"></div>
+					<ul class="nav-links">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div class="form">
+						<div class="i fas fa-search"></div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- Header End  -->
+		<!-- Landing Start  -->
+		<div class="landing">
+			<div class="overlay">
+				<div class="text">
+					<div class="content">
+						<h2>
+							Hello World!
+							<br />
+							We Are Kasper We Make Art.
+						</h2>
+						<p>
+							Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+							elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et,
+							porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+						</p>
+					</div>
+				</div>
+			</div>
+			<i class="fa-solid fa-angle-left fa-2x angle left-angle"></i>
+			<i class="fa-solid fa-angle-right fa-2x angle right-angle"></i>
+			<ul class="bullets">
+				<li></li>
+				<li class="active"></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- Landing End  -->
+		<!-- Services Start -->
+		<div class="services">
+			<div class="container">
+				<div class="main-heading">
+					<h2>Services</h2>
+					<p>
+						Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+						eget tincidunt.
+					</p>
+				</div>
+				<div class="services-container">
+					<div class="service">
+						<i class="fas fa-desktop fa-3x"></i>
+						<div class="text">
+							<h3>Vorem amet intuitive</h3>
+							<p>
+								Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+								elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+							</p>
+						</div>
+					</div>
+					<div class="service">
+						<i class="fas fa-cog fa-3x"></i>
+						<div class="text">
+							<h3>Vorem amet intuitive</h3>
+							<p>
+								Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+								elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+							</p>
+						</div>
+					</div>
+					<div class="service">
+						<i class="fas fa-pencil-ruler fa-3x"></i>
+						<div class="text">
+							<h3>Vorem amet intuitive</h3>
+							<p>
+								Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+								elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+							</p>
+						</div>
+					</div>
+					<div class="service">
+						<i class="fas fa-camera fa-3x"></i>
+						<div class="text">
+							<h3>Vorem amet intuitive</h3>
+							<p>
+								Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+								elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Services End -->
+		<!-- Design Start -->
+		<div class="design">
+			<div class="image">
+				<img src="images/mobile.png" alt="mobile" />
+			</div>
+			<div class="text">
+				<h2>Our Design Comes With...</h2>
+
+				<ul>
+					<li>
+						<p>Responsive Design</p>
+					</li>
+					<li>
+						<p>Modern And Clean Design</p>
+					</li>
+					<li>
+						<p>Clean Code</p>
+					</li>
+					<li>
+						<p>Browser Friendly</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Design End-->
+		<!-- Portfolio Start -->
+		<div class="portfolio">
+			<div class="container">
+				<div class="main-heading">
+					<h2>Portfolio</h2>
+					<p>
+						Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+						eget tincidunt.
+					</p>
+				</div>
+				<div class="buttons">
+					<ul>
+						<li>All</li>
+						<li>App</li>
+						<li>Photo</li>
+						<li>Web</li>
+						<li>Print</li>
+					</ul>
+				</div>
+			</div>
+			<div class="imgs-container">
+				<div class="img-box">
+					<img src="images/shuffle-01.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-02.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-03.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-04.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-05.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-06.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-07.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+				<div class="img-box">
+					<img src="images/shuffle-08.jpg" alt="img" />
+					<div class="caption">
+						<h4>Awesome Image</h4>
+						<p>photography</p>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="more">More</a>
+		</div>
+		<!-- Portfolio End -->
+	</body>
 </html>
