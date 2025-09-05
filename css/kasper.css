@@ -2,8 +2,8 @@
 :root {
 	--main-color: #19c8fa;
 	--transparent-color: rgb(15 116 143 / 70%);
-
 	--sections-padding: 100px;
+	font-size: 14px;
 }
 /* Variables End  */
 
@@ -511,7 +511,6 @@ header nav .form .i:hover {
 .portfolio .imgs-container img {
 	max-width: 100%;
 	transition: 0.3s;
-
 }
 
 .portfolio .img-box .caption {
@@ -532,16 +531,179 @@ header nav .form .i:hover {
 	color: var(--main-color);
 }
 
-.portfolio .more{
+.portfolio .more {
 	background-color: var(--main-color);
-    text-decoration: none;
-    padding: 20px;
-    margin: 30px auto;
-    color: white;
-    display: block;
-    width: fit-content;
-    text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px;
+	margin: 30px auto;
+	color: white;
+	display: block;
+	width: fit-content;
+	text-transform: uppercase;
 }
 
+.portfolio .more span {
+	transition: 0.3s;
+	display: inline-block;
+}
 
+.portfolio .more:hover span {
+	transform: scale(1.1);
+}
 /* Portfolio End */
+
+/* Video Start */
+.video {
+	position: relative;
+}
+.video video {
+	width: 100%;
+}
+
+.video::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(0 0 0 / 35%);
+}
+
+.video .text {
+	position: absolute;
+	background-color: var(--transparent-color);
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 50px;
+}
+
+.video .text h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+.video .text p {
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.video .text button {
+	padding: 15px;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
+.video .text span {
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.video .text button:hover span {
+	transform: scale(1.1);
+}
+/* Video End */
+
+/* About Us Start */
+
+.about-us {
+	padding-top: var(--sections-padding);
+	overflow: hidden;
+	text-align: center;
+}
+
+.about-us .image img {
+	position: relative;
+	bottom: -120px;
+	margin-top: -120px;
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.about-us .image img {
+		position: relative;
+		bottom: -80px;
+		margin-top: -80px;
+		/* max-width: 100%; */
+	}
+}
+/* About Us End  */
+
+/* Statistics Start */
+
+.stats {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+	position: relative;
+	background-image: url(../images/stats.png);
+	background-size: cover;
+}
+
+.stats .container {
+	position: relative;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.stats::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(0 0 0 / 60%);
+}
+
+.stats .box {
+	background-color: var(--transparent-color);
+	padding: 50px;
+	color: white;
+}
+
+@media (max-width: 767px) {
+	.stats .box {
+		flex-basis: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.stats .box {
+		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.stats .box {
+		flex-basis: 25%;
+	}
+}
+
+.stats .box i {
+	width: 40px;
+	height: 40px;
+	background: black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 35px;
+}
+.stats .box h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0 0 20px;
+}
+.stats .box p {
+	font-size: 1rem;
+}
+
+/* Statistics End  */
