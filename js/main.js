@@ -20,3 +20,16 @@ for (let i = 0; i < buttons.length; i++) {
 		this.classList.add('active');
 	});
 }
+
+
+// Handle active state for all bullet lists
+let bulletLists = document.querySelectorAll('.bullets');
+bulletLists.forEach((bulletList) => {
+	let bullets = bulletList.querySelectorAll('li');
+	bullets.forEach((bullet) => {
+		bullet.addEventListener('click', function() {
+			bullets.forEach((b) => b.classList.remove('active'));
+			this.classList.add('active');
+		});
+	});
+});

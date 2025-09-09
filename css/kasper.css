@@ -3,7 +3,7 @@
 	--main-color: #19c8fa;
 	--transparent-color: rgb(15 116 143 / 70%);
 	--sections-padding: 100px;
-	font-size: 14px;
+	--gray-color: #333;
 }
 /* Variables End  */
 
@@ -98,6 +98,66 @@ ul {
 	width: 100%;
 	margin: 0 auto 100px;
 	letter-spacing: 2px;
+}
+
+.bullets {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	gap: 10px;
+	transform: translateX(-50%);
+}
+
+.bullets li {
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.bullets .active {
+	background-color: var(--main-color);
+	border-color: var(--main-color);
+}
+
+/* Reusable Blue Button Component */
+.blue-btn {
+	background-color: var(--main-color);
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 30px;
+	margin: 30px auto;
+	display: block;
+	width: fit-content;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.2s;
+	letter-spacing: 1px;
+	box-shadow: 0 2px 8px rgba(25, 200, 250, 0.08);
+	text-align: center;
+}
+
+.blue-btn span {
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.blue-btn:hover,
+.blue-btn:focus {
+	background-color: #0fa4d6;
+	transform: translateY(-2px) scale(1.04);
+	color: #fff;
+}
+
+.blue-btn:hover span,
+.blue-btn:focus span {
+	transform: scale(1.1);
 }
 
 /* Component End  */
@@ -707,3 +767,259 @@ header nav .form .i:hover {
 }
 
 /* Statistics End  */
+
+/* Skills Start */
+.skills {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+}
+
+.skills .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+	.skills .container > div {
+		flex-basis: 45%;
+		position: relative;
+	}
+}
+
+.skills .container > div > h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: large;
+}
+
+.skills .container > div > p {
+	color: var(--gray-color);
+	margin-bottom: 60px;
+	text-align: center;
+	line-height: 2;
+}
+
+.skills .testimonials .box {
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.skills .testimonials .box img {
+	width: 100px;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+	.skills .testimonials .box {
+		flex-direction: column;
+		text-align: center;
+	}
+	.skills .testimonials .box img {
+		margin: 0 auto 20px;
+	}
+}
+.skills .testimonials .box .text {
+	line-height: 1.5;
+	border-bottom: 1px solid #ccc;
+}
+.skills .testimonials .box .text .name {
+	text-align: right;
+	font-size: 14px;
+	margin: 10px 0;
+	color: var(--gray-color);
+}
+
+.skills .testimonials .bullets {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	gap: 10px;
+	transform: none;
+}
+
+.skills .testimonials .bullets li {
+	border-color: var(--gray-color);
+}
+
+.skills .skills-container .prog-holder {
+	margin-bottom: 40px;
+}
+.skills .skills-container .prog-holder h4 {
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+.skills .skills-container .prog-holder .prog {
+	background: #dedadc;
+	height: 30px;
+}
+.skills .skills-container .prog-holder span {
+	display: block;
+	background-color: var(--main-color);
+	height: 100%;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		border-color: black transparent transparent transparent;
+		border-width: 10px;
+		border-style: solid;
+		right: -10px;
+		top: -14px;
+	}
+
+	&::before {
+		content: attr(data-progress);
+		position: absolute;
+		right: -18px;
+		top: -40px;
+		background: black;
+		color: white;
+		border-radius: 15%;
+		width: 40px;
+		text-align: center;
+		padding: 4px;
+	}
+}
+/* Skills End */
+/* Quote Start */
+.quote {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+	background-image: url(../images/quote.jpg);
+	background-size: cover;
+	position: relative;
+	text-align: center;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgb(0 0 0 / 70%);
+	}
+}
+
+.quote > div > q {
+	position: relative;
+	color: white;
+
+	&::before {
+		font-family: "Font Awesome 5 Free";
+		content: "\f10d";
+		font-weight: 900;
+		margin-right: 10px;
+	}
+	&::after {
+		font-family: "Font Awesome 5 Free";
+		content: "\f10e";
+		font-weight: 900;
+		margin-left: 10px;
+	}
+}
+
+.quote > div > p {
+	position: relative;
+	color: white;
+	margin-top: 30px;
+}
+/* Quote End */
+
+/* Pricing Start */
+.pricing {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+	position: relative;
+}
+
+.pricing > div > .plans {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.pricing > div > div:nth-child(2) .plan {
+	text-align: center;
+	background: #f4f4f4;
+}
+
+.pricing .plan .head {
+	padding: 40px 20px;
+	border-top: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 15px;
+}
+.pricing .plan .head h3 {
+	margin-bottom: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.pricing .plan .head .amount {
+	position: relative;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.pricing .plan .head .amount::before {
+	content: attr(data-currency);
+	position: absolute;
+	font-size: 1.25rem;
+	top: -10px;
+	left: -20px;
+	font-weight: bold;
+}
+.pricing .plan .head .amount::after {
+	content: attr(data-period);
+	position: absolute;
+	font-size: 1.25rem;
+	bottom: -5px;
+	right: -50px;
+	font-weight: bold;
+}
+
+.pricing .plan .body li {
+	padding: 20px;
+	position: relative;
+}
+.pricing .plan .body li:not(li:last-child)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 1px;
+	background-color: var(--main-color);
+	transform: translateX(-50%);
+	left: 50%;
+	bottom: 0;
+}
+.pricing .plan .body li:last-of-type {
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 25px;
+}
+
+.pricing .plan .foot button {
+	background: transparent;
+	border: 1px solid var(--main-color);
+	padding: 15px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.pricing > div > h3 {
+	margin-top: 30px;
+	text-align: center;
+	font-weight: normal;
+}
+
+/* Pricing End */
