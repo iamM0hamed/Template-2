@@ -1,0 +1,93 @@
+/* Pricing Start */
+.pricing {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+	position: relative;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.pricing > div > .plans {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.pricing > div > div:nth-child(2) .plan {
+	text-align: center;
+	background: var(--pricing-bg);
+	color: var(--plan-txt-color);
+}
+
+.pricing .plan .head {
+	padding: 40px 20px;
+	border-top: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 15px;
+}
+.pricing .plan .head h3 {
+	margin-bottom: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.pricing .plan .head .amount {
+	position: relative;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.pricing .plan .head .amount::before {
+	content: attr(data-currency);
+	position: absolute;
+	font-size: 1.25rem;
+	top: -10px;
+	left: -20px;
+	font-weight: bold;
+}
+.pricing .plan .head .amount::after {
+	content: attr(data-period);
+	position: absolute;
+	font-size: 1.25rem;
+	bottom: -5px;
+	right: -50px;
+	font-weight: bold;
+}
+
+.pricing .plan .body li {
+	padding: 20px;
+	position: relative;
+}
+.pricing .plan .body li:not(li:last-child)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 1px;
+	background-color: var(--main-color);
+	transform: translateX(-50%);
+	left: 50%;
+	bottom: 0;
+}
+.pricing .plan .body li:last-of-type {
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 25px;
+}
+
+.pricing > div > h3 {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.pricing .plan .foot button {
+	border: 1px solid var(--main-color);
+	background: transparent;
+	color: var(--plan-txt-color);
+	padding: 15px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+/* Pricing End */

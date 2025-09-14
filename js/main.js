@@ -9,6 +9,14 @@ for (let i = 0; i < links.length; i++) {
 	});
 }
 
+// add the click event for the nav menu
+// add the click event for the nav menu
+const toggleMenu = document.querySelector('header nav .toggle-menu');
+toggleMenu.addEventListener('click', () => {
+	const navMenu = document.querySelector('header nav ul.nav-links');
+	navMenu.classList.toggle('mobile-menu');
+});
+
 //==================================================================================
 
 // add active to portfolio buttons when clicked

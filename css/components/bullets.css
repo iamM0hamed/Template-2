@@ -1,0 +1,23 @@
+/* Bullets Component */
+
+.bullets {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    gap: 10px;
+    transform: translateX(-50%);
+}
+
+.bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bullets .active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}

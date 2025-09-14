@@ -1,0 +1,34 @@
+/* Base styles */
+@import url('base/variables.css');     /* All CSS variables for theming */
+@import url('base/normalize.css');         /* Box-sizing, margins, padding resets */
+@import url('base/typography.css');    /* Font family, basic text styles */
+@import url('vendors/all.min.css');   /* FontAwesome */
+
+/* Layout */
+@import url('layout/grid.css');        /* Container class and layout grid */
+@import url('layout/header.css');      /* Header and navigation bar */
+@import url('layout/footer.css');      /* Footer section */
+
+/* Components */
+@import url('components/headings.css'); /* Main section headings */
+@import url('components/bullets.css');  /* Slider bullets and indicators */
+@import url('components/buttons.css');  /* Blue buttons and back-to-top */
+@import url('components/navigation.css'); /* Navigation menus including mobile */
+
+/* Sections */
+@import url('sections/landing.css');    /* Hero section with slider */
+@import url('sections/services.css');   /* Services section */
+@import url('sections/design.css');     /* Design section */
+@import url('sections/portfolio.css');  /* Portfolio section */
+@import url('sections/video.css');      /* Video section */
+@import url('sections/statistics.css');      /* Statistics counters */
+@import url('sections/skills.css');     /* Skills and testimonials */
+@import url('sections/quote.css');      /* Quote section */
+@import url('sections/pricing.css');    /* Pricing tables */
+@import url('sections/subscribe.css');  /* Email subscription */
+@import url('sections/contact-us.css');    /* Contact form */
+@import url('sections/about-us.css');
+
+/* Responsive styles - always last */
+@import url('layout/responsive.css');   /* Media queries for all sections */
+

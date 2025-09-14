@@ -1,0 +1,81 @@
+/* Design Start */
+
+.design {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+	height: 600px;
+	background-image: url("../../images/design-features.jpg");
+	background-size: cover;
+	display: flex;
+	position: relative;
+	overflow-y: hidden;
+}
+
+.design::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--overlay-color);
+}
+
+.design .image,
+.design .text {
+	z-index: 2;
+	position: relative;
+	flex: 1;
+}
+
+.design .image {
+	text-align: center;
+}
+
+.design .image img {
+	position: relative;
+	bottom: -120px;
+}
+
+@media (max-width: 767px) {
+	.design .image img {
+		display: none;
+	}
+	.design {
+		display: block;
+		height: auto;
+	}
+	.design .text {
+		width: 100%;
+		padding: 30px;
+	}
+}
+.design .text {
+	color: var(--white-color);
+	padding: 50px;
+	background-color: var(--transparent-color);
+}
+
+.design .text h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.design .text ul li {
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+}
+
+.design .text ul li::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f108";
+	font-weight: 900;
+	margin-right: 10px;
+	font-size: 18px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+/* Design End */

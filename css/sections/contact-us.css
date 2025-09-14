@@ -1,0 +1,82 @@
+/* Contact Us Start */
+
+.contact-us {
+	padding-bottom: var(--sections-padding);
+	padding-top: var(--sections-padding);
+	position: relative;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.contact-us .container {
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 767px) {
+	.contact-us .container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.contact-us .contact {
+	flex: 1;
+	margin-right: 35px;
+}
+
+@media (max-width: 767px) {
+	.contact-us .contact {
+		margin: 0;
+	}
+}
+
+.contact-us .container form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contact-us .container .main-input {
+	border: 1px solid var(--border-color);
+	padding: 20px;
+	width: 100%;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.contact-us .container .main-input[name="message"] {
+	padding: 50px;
+	position: relative;
+}
+.contact-us .container .main-input[name="message"]::placeholder {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.contact-us .container .info h4 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.contact-us .container .info h4:last-child {
+	margin-top: 40px;
+}
+@media (max-width: 767px) {
+	.contact-us .container .info h4:last-child {
+		margin-top: 30px 0;
+	}
+}
+.contact-us .container p {
+	color: var(--paragraph-color);
+	margin-bottom: 10px;
+}
+
+.contact-us .container address {
+	line-height: 2;
+	color: var(--paragraph-color);
+}
+
+/* Contact Us End */

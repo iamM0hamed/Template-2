@@ -1,0 +1,25 @@
+/* About Us Start */
+
+.about-us {
+	padding-top: var(--sections-padding);
+	overflow: hidden;
+	text-align: center;
+	background-color: var(--bg-color);
+}
+
+.about-us .image img {
+	position: relative;
+	bottom: -120px;
+	margin-top: -120px;
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.about-us .image img {
+		position: relative;
+		bottom: -80px;
+		margin-top: -80px;
+		/* max-width: 100%; */
+	}
+}
+/* About Us End  */

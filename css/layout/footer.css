@@ -1,0 +1,56 @@
+/* Footer Start */
+footer {
+	padding-bottom: var(--sections-padding);
+	padding-top: var(--sections-padding);
+	background: url(../../images/subscribe.jpg);
+	background-size: cover;
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: var(--quote-overlay);
+	}
+}
+
+footer > div {
+	color: var(--white-color);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+footer img {
+	margin-bottom: 40px;
+}
+
+footer h3 {
+	border-bottom: 1px solid var(--white-color);
+	padding-bottom: 15px;
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+footer .container ul {
+	list-style: none;
+	display: flex;
+	font-size: 1.5rem;
+	margin-top: 15px;
+	gap: 20px;
+}
+
+footer p {
+	position: absolute;
+	bottom: -50px;
+}
+footer p span {
+	color: var(--main-color);
+}
+
+/* Footer End */

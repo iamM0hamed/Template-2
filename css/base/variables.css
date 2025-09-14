@@ -1,0 +1,46 @@
+/* Light theme variables (default) */
+:root {
+	--main-color: #19c8fa;
+	--transparent-color: rgb(15 116 143 / 70%);
+	--sections-padding: 100px;
+	--text-color: #1f2021;
+	--bg-color: #fff;
+	--heading-color: #1f2021;
+	--paragraph-color: #777;
+	--stats-bg: rgb(0 0 0 / 60%);
+	--section-bg: #f4f4f4;
+	--border-color: #ccc;
+	--overlay-color: rgb(0 0 0 / 50%);
+	--header-line-color: #f2f2f2;
+	--header-menu-bg: rgb(0 0 0 / 50%);
+	--white-color: #fff;
+	--black-color: #000;
+	--quote-overlay: rgb(0 0 0 / 70%);
+	--box-shadow-color: rgba(25, 200, 250, 0.08);
+	--gray-color: #444;
+	--plan-txt-color: black;
+	--pricing-bg: #f4f4f4;
+}
+
+/* Dark theme variables (override when dark theme is active) */
+body.dark-theme {
+	--main-color: #19c8fa;
+	--transparent-color: rgb(15 116 143 / 80%);
+	--text-color: #f4f4f4;
+	--bg-color: #121212;
+	--heading-color: #ffffff;
+	--paragraph-color: #bbbbbb;
+	--stats-bg: rgb(0 0 0 / 80%);
+	--section-bg: #1a1a1a;
+	--border-color: #444;
+	--overlay-color: rgb(0 0 0 / 70%);
+	--header-line-color: #333;
+	--header-menu-bg: rgb(0 0 0 / 80%);
+	--white-color: #fff;
+	--black-color: #000;
+	--quote-overlay: rgb(0 0 0 / 80%);
+	--box-shadow-color: rgba(25, 200, 250, 0.15);
+	--gray-color: #aaa;
+	--plan-txt-color: #f1f1f1;
+	--pricing-bg: #545454;
+}

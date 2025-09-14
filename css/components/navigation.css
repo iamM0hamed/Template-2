@@ -1,0 +1,11 @@
+/* Navigation Components */
+
+.mobile-menu {
+    display: flex !important;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--header-menu-bg);
+}

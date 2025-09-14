@@ -1,0 +1,44 @@
+/* Quote Start */
+.quote {
+	padding-top: var(--sections-padding);
+	padding-bottom: var(--sections-padding);
+	background-image: url(../../images/quote.jpg);
+	background-size: cover;
+	position: relative;
+	text-align: center;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: var(--quote-overlay);
+	}
+}
+
+.quote > div > q {
+	position: relative;
+	color: var(--white-color);
+
+	&::before {
+		font-family: "Font Awesome 5 Free";
+		content: "\f10d";
+		font-weight: 900;
+		margin-right: 10px;
+	}
+	&::after {
+		font-family: "Font Awesome 5 Free";
+		content: "\f10e";
+		font-weight: 900;
+		margin-left: 10px;
+	}
+}
+
+.quote > div > p {
+	position: relative;
+	color: var(--white-color);
+	margin-top: 30px;
+}
+/* Quote End */
