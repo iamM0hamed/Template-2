@@ -22,11 +22,22 @@ I was inspired and guided by [Osama Elzero](https://www.youtube.com/@ElzeroWebSc
 
 ```bash
 Template-2/
-│── index.html      # Main HTML page
-│── style.css       # Stylesheet
-│── script.js       # Custom JavaScript features (newly added ✨)
-│── images/         # Project images
-└── README.md       # Project documentation
+│── css/                  # Stylesheets
+│   ├── base/             # Base styles
+│   ├── components/       # Reusable components
+│   ├── layout/           # Layout styles
+│   ├── sections/         # Section-specific styles
+│   ├── vendors/          # Vendor CSS (external libraries)
+│   ├── webfonts/         # Web fonts
+│   └── main.css          # Main compiled stylesheet
+│
+│── images/               # Project images
+│
+│── js/                   # JavaScript files
+│
+│── index.html            # Main HTML page
+│── README.md             # Project documentation
+│── .gitignore            # Git ignore rules
 ```
 
 ## 🙌 Credits
