@@ -27,14 +27,13 @@ Template-2/
 │── script.js       # Custom JavaScript features (newly added ✨)
 │── images/         # Project images
 └── README.md       # Project documentation
-
+```
 
 ## 🙌 Credits
 
 Original Template: Graphberry – Kasper One Page PSD
 
 Mentorship & Guidance: Osama Elzero – Elzero Web School
-```
 
 ## 📌 Notes
 
