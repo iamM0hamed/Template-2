@@ -52,4 +52,4 @@ This project is mainly for learning and practice.
 
 I customized and extended the template with new JavaScript functionality.
 
-🔗 Live Demo : https://iamm0hamed.github.io/Template-2/
+🔗 Live Demo : https://iamm0hamed.github.io/Kasper-Template/
